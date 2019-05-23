@@ -62,15 +62,17 @@ namespace MyAOP
                 //RealProxyAOP.Show();
 
                 //Console.WriteLine("************CastleProxyAOP***********");
-                CastleProxyAOP.Show();
+                //CastleProxyAOP.Show();
 
                 //Console.WriteLine("************UnityAOP***********");
                 //UnityAOP.Show();
 
-                UnityConfigAOP.Show();
+                //UnityConfigAOP.Show();
                 //1 顺序问题，配置文件的注册顺序是调用顺序，然后才是业务方法，但扩展逻辑可以在业务方法后；
                 //2 接口方法不需要某个AOP扩展-a判断方法b推荐用特性(接口声明用特性，input.Target.GetType().GetCustomAttributes())
                 //3 配置可以简写
+
+                CastleProxy.show();
                 #endregion
             }
             catch (Exception ex)
